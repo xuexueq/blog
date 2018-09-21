@@ -1,6 +1,7 @@
 # 文章目录
 
 以往文章链接： <https://www.jianshu.com/u/80bc7b3f7f9e>
+
 新文章链接：<https://github.com/xuexueq/blog/issues/>
 
 【数据结构与算法】
@@ -14,6 +15,7 @@
 
 【javascript】
 * [深入理解 Promise](https://github.com/xuexueq/blog/issues/7)
+* [易错的小题目](https://github.com/xuexueq/blog/issues/11)
 
 【前端工程&&性能优化】
 * [前端性能优化准则](https://github.com/xuexueq/blog/issues/6)
