@@ -7,11 +7,13 @@
 【数据结构与算法】
 * [数据结构之栈与队列](https://github.com/xuexueq/blog/issues/2)
 * [笔试算法题整理【难度系数：中等】](https://github.com/xuexueq/blog/issues/10)
+* [排序算法之堆排序](https://github.com/xuexueq/blog/issues/13)
 
 【浏览器机制 && 计算机网络】
 * [关于WEB安全](https://github.com/xuexueq/blog/issues/9)
 * [浏览器跨域解决方案](https://github.com/xuexueq/blog/issues/8)
 * [浏览器存储方案（Cookie、LocalStorage、SessionStorage）](https://github.com/xuexueq/blog/issues/5)
+* [浏览器渲染页面的过程](https://github.com/xuexueq/blog/issues/12)
 
 【javascript】
 * [深入理解 Promise](https://github.com/xuexueq/blog/issues/7)
