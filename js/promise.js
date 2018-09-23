@@ -17,6 +17,7 @@ myPromise.prototype.resolve = function(val) {
 };
 // .then() 每次返回一个新的 Promise 对象
 myPromise.prototype.then = function(fullfilled) {
+    fullfilled = typeof fullfilled === 'function' ? fullfilled : (value) => {return value}; // 实现Promise值的穿透
     //let _this = this;
     return new myPromise((resolve, reject) => {
         this.resolveFun = () => {
@@ -46,6 +47,8 @@ class myPromise {
         调用 then() 注册回调函数， 类似观察者模式
     */
     then(onFulfilled, onRejected) {
+        fullfilled = typeof fullfilled === 'function' ? fullfilled : (value) => {return value};
+        onRejected = typeof onRejected === 'function' ? onRejected : (value) => {throw value};
         // this.resolveFunc = onFulfilled;
         // this.rejectedFunc = onRejected;
         return new myPromise((resolve, reject) => {
