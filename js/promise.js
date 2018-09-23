@@ -101,3 +101,35 @@ class myPromise {
         }
     }
 }
+
+/**
+*****************************************************
+*/
+
+(function() {
+    let STOP_VALUE = {}; // //只要外界无法“===”这个对象就可以了
+    // let STOP_VALUE = Symbol()//构造一个Symbol以表达特殊的语义
+    let STOP_PROMISE = Promise.resolve(STOP_VALUE); // //不是每次返回一个新的Promise，可以节省内存。即所有的终止 Promise 而返回的永远处于pedding状态的Promise对象都是共用这一个 Promise，不需要每次终止 Promise 都去返回一个新的永远处于pedding状态的Promise对象
+
+    Promise.stop = function () {
+        return STOP_PROMISE;
+    }
+    Promise.prototype._then = Promise.prototype.then;
+    Promise.prototype.then = function(resolveFun, rejectedFun) {
+        return this._then((value) => {
+            return value === STOP_VALUE ? value : resolveFun(value);
+        }, rejectedFun); // return
+    };
+})()
+
+Promise.resolve(8).then(v => {
+  console.log(v)
+  return 9
+}).then(v => {
+  console.log(v)
+  return Promise.stop()//较为明确的语义
+}).catch(function(){// will never called but will be GCed
+  console.log('catch')
+}).then(function(){// will never called but will be GCed
+  console.log('then')
+})
