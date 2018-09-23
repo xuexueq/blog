@@ -19,7 +19,7 @@
 * [深入理解 Promise(上)](https://github.com/xuexueq/blog/issues/7) : 【[code here..](https://github.com/xuexueq/blog/blob/master/js/promise.js)】
 * [易错的小题目](https://github.com/xuexueq/blog/issues/11)
 * [深入理解Promise（下）](https://github.com/xuexueq/blog/issues/14)
-* [你真的了解 instanceof 吗](https://github.com/xuexueq/blog/issues/15)
+* [你真的了解 instanceof 吗](https://github.com/xuexueq/blog/issues/15) : 【[code here...](https://github.com/xuexueq/blog/blob/master/js/instanceof.js)】
 
 【前端工程&&性能优化】
 * [前端性能优化准则](https://github.com/xuexueq/blog/issues/6)
