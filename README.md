@@ -8,6 +8,8 @@
 * [数据结构之栈与队列](https://github.com/xuexueq/blog/issues/2) :  【[code here..](https://github.com/xuexueq/blog/blob/master/js/stack%26%26queue.js)】
 * [笔试算法题整理【难度系数：中等】](https://github.com/xuexueq/blog/issues/10)
 * [排序算法之堆排序](https://github.com/xuexueq/blog/issues/13) : 【[code here..](https://github.com/xuexueq/blog/blob/master/js/heapSort.js)】
+* [二维数组中的查找](https://github.com/xuexueq/blog/issues/16)
+* [合并两个有序的数组](https://github.com/xuexueq/blog/issues/17)
 
 【浏览器机制 && 计算机网络】
 * [关于WEB安全](https://github.com/xuexueq/blog/issues/9)
