@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>双inline-block方案</title>
+    <style type="text/css">
+    .wrapper {
+        padding: 15px 20px;
+        border: 1px dashed #ff6c60;
+    }
+
+    .left {
+        width: 120px;
+        border: 5px solid #ddd;
+    }
+
+    .right {
+        border: 5px solid #ddd;
+        margin-left: 20px;
+    }
+
+    .wrapper-inline-block {
+        box-sizing: content-box;
+        font-size: 0px;
+    }
+
+    .wrapper-inline-block .left,
+    .wrapper-inline-block .right {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .wrapper-inline-block .right {
+        width: calc(100% - 140px);
+    }
+
+/*     
+    .wrapper {
+        font-size: 0;
+    }
+    .left, .right {
+        display: inline-block;
+        font-size: 14px;
+        vertical-align: top;
+    }
+    .left {
+        width : 100px;
+    }
+    .right {
+        width: calc(100% - 100px);
+    } 
+    */
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper wrapper-inline-block" id="wrapper">
+        <div class="left">
+            左边固定宽度，高度不固定 </br>
+            </br>
+            </br>
+            </br>高度有可能会很小，也可能很大。
+        </div>
+        <div class="right">
+            这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+            基本的样式是，两个div相距20px, 左侧div宽 120px
+        </div>
+    </div>
+</body>
+
+</html>

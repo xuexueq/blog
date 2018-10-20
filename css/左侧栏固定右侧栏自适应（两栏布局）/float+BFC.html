@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float+BFC</title>
+    <style type="text/css">
+    #wrapper {
+        padding: 15px 20px;
+        border: 1px dashed #ff6c60;
+        /*box-sizing: border-box;*/
+    }
+
+    .left {
+        width: 120px;
+        border: 5px solid #ddd;
+    }
+
+    .right {
+        border: 5px solid #ddd;
+        margin-left: 20px;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #wrapper .left {
+        float: left;
+        box-sizing: border-box;
+        margin-right: 20px;
+    }
+
+    #wrapper .right {
+        overflow: hidden;
+    }
+    
+    /* 
+    简写版：（核心代码）
+
+    #wrapper {
+        overflow: hidden;
+    }
+
+    .left {
+        float: left;
+        width: 200px;
+    }
+
+    .right {
+        overflow: hidden;
+    }
+     */
+    
+    </style>
+</head>
+
+<body>
+    <div class="clearfix" id="wrapper">
+        <div class="left">
+            左边固定宽度，高度不固定eeeeeeeeeee </br>
+            </br>
+            </br>
+            </br>高度有可能会很小，也可能很大。哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或333333333333333
+        </div>
+        <div class="right">
+            这里的内容可能比左侧高，也可能比左侧低。宽度需要自适应。</br>
+            基本的样式是，两个div相距20px, 左侧div宽 120px9。
+            【注意：】英文和数字无法自动换行，需手动处理。
+        </div>
+    </div>
+</body>
+
+</html>
