@@ -28,7 +28,11 @@
 * [你真的了解 instanceof 吗](https://github.com/xuexueq/blog/issues/15) : 【[code here...](https://github.com/xuexueq/blog/blob/master/js/instanceof.js)】
 * [数据类型之间的转换（显示转换&&隐式转换）](https://github.com/xuexueq/blog/issues/20)
 * [数组或对象的扁平化处理](https://github.com/xuexueq/blog/issues/21)
+
+【设计模式 && 函数式编程】
+* [函数式编程了解一下](https://github.com/xuexueq/blog/issues/25)
 * [函数式编程之柯里化](https://github.com/xuexueq/blog/issues/24) : 【[code here...](https://github.com/xuexueq/blog/blob/master/js/curry.js)】
+* [函数式编程之组合与管道](https://github.com/xuexueq/blog/issues/26) : 【[code here...](https://github.com/xuexueq/blog/blob/master/js/compose&pipe.js)】
 
 【前端工程&&性能优化】
 * [前端性能优化准则](https://github.com/xuexueq/blog/issues/6)
